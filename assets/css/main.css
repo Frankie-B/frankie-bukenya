@@ -152,7 +152,7 @@ img {
     height: 100%;
     padding: 2rem;
     position: fixed;
-    right: 0;
+    right: -100%;
     transition: 0.5s;
     width: 80%;
   }
@@ -203,6 +203,9 @@ img {
 }
 
 /* SHOW MENU  */
+.show {
+  right: 0;
+}
 
 /* HOME */
 
