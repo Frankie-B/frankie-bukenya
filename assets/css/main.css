@@ -242,6 +242,8 @@ img {
 }
 
 .home-img {
+  border-radius: 50%;
+  border: 0.5rem solid var(--primary-color);
   position: absolute;
   right: 0;
   bottom: 0;
@@ -263,11 +265,20 @@ img {
 }
 
 /* ABOUT */
+.about-container {
+  row-gap: 2rem;
+  text-align: center;
+}
 
-/* SKILLS */
+.about-subtitle {
+  margin-bottom: var(--mb-2);
+}
 
-/* PROJECTS */
+.about-img {
+  justify-self: center;
+}
 
-/* CONTACT */
-
-/* FOOTER */
+.about-img img {
+  border-radius: 0.5rem;
+  width: 200px;
+}
