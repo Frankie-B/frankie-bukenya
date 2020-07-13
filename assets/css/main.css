@@ -1,0 +1,217 @@
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+/* VARIABLES */
+:root {
+  --header-height: 3rem;
+  --font-semi: 600;
+}
+
+/* COLOURES */
+:root {
+  --primary-color: blue;
+  --secondary-color: black;
+}
+
+/* TYPOGRAPHY */
+:root {
+  --body-font: 'Montserrat', arial, sans-serif, helvetica;
+  --big-font-size: 2rem;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: 0.938rem;
+}
+
+@media screen(min-width: 768px) {
+  :root {
+    --big-font-size: 3.5rem;
+    --h2-font-size: 2rem;
+    --normal-font-size: 1rem;
+  }
+}
+
+/* MARGINS */
+:root {
+  --mb-1: 0.5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  --mb-6: 3rem;
+}
+
+/* Z INDEX */
+:root {
+  --z-back: -10;
+  --z-normal: 0;
+  --z-tooltip: 1;
+  --z-fixed: 100;
+}
+
+/* GLOBAL RULES */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--secondary-color);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  margin: var(--header-height) 0 0 0 0;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+/* CLASSES */
+.section-title {
+  color: var(--primary-color);
+  font-size: var(--h2-font-size);
+  margin-top: var(--mb-2);
+  margin-bottom: var(--mb-4);
+  position: relative;
+  text-align: center;
+}
+
+.section-title::after {
+  background-color: var(--primary-color);
+  content: '';
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  height: 0.18rem;
+  top: 2rem;
+  widows: 64px;
+}
+
+.section {
+  padding-bottom: 2rem;
+  padding-top: 3rem;
+}
+
+/* LAYOUT */
+
+.bd-grid {
+  display: grid;
+  grid-template-columns: 100%;
+  column-gap: 2rem;
+  max-width: 1024px;
+  margin-left: var(--mb-2);
+  margin-right: var(--mb-2);
+  width: calc(100% - 2rem);
+}
+
+.lg-header {
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(146, 131, 176, 0.15);
+  left: 0;
+  right: 0;
+  position: fixed;
+  width: 100%;
+  z-index: var(--z-fixed);
+}
+
+/* NAVIGATION */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: var(--font-semi);
+  height: var(--header-height);
+}
+
+@media screen and (max-width: 768px) {
+  .nav-menu {
+    background-color: var(--secondary-color);
+    top: var(--header-height);
+    height: 100%;
+    padding: 2rem;
+    position: fixed;
+    right: 0;
+    transition: 0.5s;
+    width: 80%;
+  }
+}
+
+.nav-item {
+  margin-bottom: var(--mb-4);
+}
+
+.nav-link {
+  color: #fff;
+  position: relative;
+}
+
+.nav-link:hover {
+  position: relative;
+}
+
+.nav-link:hover::after {
+  background-color: var(--primary-color);
+  content: '';
+  height: 0.18rem;
+  left: 0;
+  position: absolute;
+  top: 2rem;
+  width: 100%;
+}
+
+.nav-logo {
+  color: var(--secondary-color);
+}
+
+.nav-toggle {
+  color: var(--secondary-color);
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+/* ACTIVE MENU */
+.active::after {
+  background-color: var(--primary-color);
+  content: '';
+  height: 0.18rem;
+  left: 0;
+  position: absolute;
+  top: 2rem;
+  width: 100%;
+}
+
+/* SHOW MENU  */
+
+/* HOME */
+
+/* ABOUT */
+
+/* SKILLS */
+
+/* PROJECTS */
+
+/* CONTACT */
+
+/* FOOTER */
