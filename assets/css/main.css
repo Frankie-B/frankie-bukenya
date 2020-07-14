@@ -129,7 +129,7 @@ img {
   background-color: #fff;
   box-shadow: 0 1px 4px rgba(146, 131, 176, 0.15);
   left: 0;
-  right: 0;
+  top: 0;
   position: fixed;
   width: 100%;
   z-index: var(--z-fixed);
@@ -282,3 +282,21 @@ img {
   border-radius: 0.5rem;
   width: 200px;
 }
+
+/* SKILLS */
+.skills-container {
+  row-gap: 2rem;
+  text-align: center;
+}
+
+.section-subtitle {
+  margin-bottom: var(--mb-2);
+}
+
+/* PROJECTS */
+
+/* CONTACT */
+
+/* FOOTER */
+
+/* MEDIA QUERIES */
