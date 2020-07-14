@@ -363,6 +363,29 @@ img {
 }
 /* PROJECTS */
 
+.work {
+  text-align: center;
+}
+
+.work-container {
+  row-gap: 2rem;
+}
+
+.work-img {
+  box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.work-img img {
+  transition: 1s;
+  cursor: pointer;
+}
+
+.work-img img:hover {
+  transform: scale(1.1);
+}
+
 /* CONTACT */
 
 /* FOOTER */
