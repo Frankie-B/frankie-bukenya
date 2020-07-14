@@ -293,6 +293,74 @@ img {
   margin-bottom: var(--mb-2);
 }
 
+.skills-text {
+  margin-bottom: var(--mb-4);
+}
+
+.skills-data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 25px rgba(14, 46, 39, 0.15);
+  font-weight: var(--font-semi);
+  margin-bottom: var(--mb-4);
+  padding: 0.5rem 1rem;
+  position: relative;
+}
+
+.skills-icon {
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin-right: var(--mb-2);
+}
+
+.skills-names {
+  display: flex;
+  align-items: center;
+}
+
+.skills-bar {
+  background-color: var(--primary-color);
+  border-radius: 0.5rem;
+  height: 0.25rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: var(--z-back);
+}
+
+.skills-html {
+  width: 85%;
+}
+
+.skills-css {
+  width: 85%;
+}
+
+.skills-scss {
+  width: 80%;
+}
+
+.skills-bootstrap {
+  width: 85%;
+}
+.skills-js {
+  width: 80%;
+}
+.skills-react {
+  width: 70%;
+}
+.skills-node {
+  width: 70%;
+}
+.skills-git {
+  width: 85%;
+}
+
+.skills-img {
+  border-radius: 0.5rem;
+}
 /* PROJECTS */
 
 /* CONTACT */
