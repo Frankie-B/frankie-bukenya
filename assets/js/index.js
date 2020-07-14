@@ -27,14 +27,17 @@ function linkAction() {
 
 navLink.forEach((link) => link.addEventListener('click', linkAction));
 
-// SCROLL REVEAL ANIMATION
+// SPANS
+const spans = document.querySelectorAll('h1 span');
 
-// SCROLL HOME
+spans.forEach((span) =>
+  span.addEventListener('mouseover', function (e) {
+    span.classList.add('animate__animated', 'animate__rubberBand');
+  })
+);
 
-// SCROLL ABOUT
-
-// SCROLL SKILLS
-
-// SCROLL PROJECTS
-
-// SCROLL CONTACT
+spans.forEach((span) =>
+  span.addEventListener('mouseout', function (e) {
+    span.classList.remove('animated', 'rubberBand');
+  })
+);

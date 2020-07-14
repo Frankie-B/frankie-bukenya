@@ -71,15 +71,12 @@ body {
 
 h1,
 h2,
-h1 span,
 p {
   margin: 0;
 }
 
 section p {
   color: #fff;
-  /* letter-spacing: 3px; */
-  /* word-spacing: 10px; */
 }
 
 ul {
@@ -179,6 +176,7 @@ img {
 }
 
 .nav-link:hover {
+  color: #fff;
   position: relative;
 }
 
@@ -224,8 +222,13 @@ img {
   row-gap: 1rem;
 }
 
+span {
+  display: inline-block;
+}
+
 span:hover {
   color: var(--highlight-color);
+  cursor: pointer;
   transition: all 0.5s;
 }
 
@@ -242,6 +245,7 @@ span.m-left {
 }
 
 .home-title {
+  color: #fff;
   font-size: var(--big-font-size);
   margin-bottom: var(--mb-2);
 }
