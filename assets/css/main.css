@@ -335,7 +335,9 @@ span.m-left {
 }
 
 /* SKILLS */
+
 .skills-container {
+  grid-template-columns: repeat(2, 50%);
   row-gap: 2rem;
   text-align: center;
 }
@@ -344,74 +346,25 @@ span.m-left {
   margin-bottom: var(--mb-2);
 }
 
-.skills-text {
-  margin-bottom: var(--mb-4);
-}
-
 .skills-data {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
+  box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
   border-radius: 0.5rem;
-  box-shadow: 0 4px 25px rgba(14, 46, 39, 0.15);
-  font-weight: var(--font-semi);
-  margin-bottom: var(--mb-4);
-  padding: 0.5rem 1rem;
-  position: relative;
-}
-
-.skills-icon {
-  color: #fff;
-  font-size: 2rem;
-  margin-right: var(--mb-2);
+  overflow: hidden;
 }
 
 .skills-names {
   color: #fff;
   display: flex;
-  align-items: center;
+  flex-direction: column;
 }
 
-.skills-bar {
-  background-color: var(--primary-color);
-  border-radius: 0.5rem;
-  height: 0.5rem;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  z-index: var(--z-back);
+.skills-names:hover {
+  color: var(--highlight-color);
 }
 
-.skills-html {
-  width: 80%;
-}
-
-.skills-css {
-  width: 80%;
-}
-
-.skills-scss {
-  width: 75%;
-}
-
-.skills-bootstrap {
-  width: 80%;
-}
-.skills-js {
-  width: 80%;
-}
-.skills-react {
-  width: 70%;
-}
-.skills-node {
-  width: 70%;
-}
-.skills-git {
-  width: 80%;
-}
-
-.skills-img {
-  border-radius: 0.5rem;
+.skills-icon {
+  font-size: 5rem;
 }
 
 /* PROJECTS */
